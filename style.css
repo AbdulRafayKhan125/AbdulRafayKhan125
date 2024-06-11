@@ -8,8 +8,24 @@ html,
 body{
     height:100%;
     width: 100%;
-    background:linear-gradient(to right, rgb(1, 32, 1),rgb(1, 32, 1),rgb(52, 88, 52),rgb(1, 32, 1),rgb(1, 32, 1));
     color:#fff;
+    overflow: hidden;
+}
+
+#main{
+    height:100vh;
+    width: 100vw;
+    background: url('./assets/bg.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#main>video{
+    height:130%;
+    width: 140vw;
+    margin-left: -20vw;
+    position: absolute;
+    z-index: -1;
 }
 
 #nav{
@@ -25,7 +41,7 @@ body{
     font-weight: 700;
 }
 .logo>span{
-    color:yellow;
+    color:red;
 }
 
 .links>a{
@@ -38,7 +54,7 @@ body{
 .btn{
     height:5vh;
     width: 10vw;
-    border:2px solid yellow;
+    border:2px solid red;
     border-radius: 20px;
     background:transparent;
     color:#fff;
@@ -80,7 +96,7 @@ body{
 
 .hero-left>h2{
     margin-top: 1vw;
-    color:yellow;
+    color:red;
     font-size: 3vw;
     font-weight: 900;
 }
@@ -94,4 +110,24 @@ body{
 .j{
     color:red;
     padding-left:5vw
+}
+
+.profile-pic{
+    height:70vh;
+    width: 30vw;
+    /* border: 2px solid #fff; */
+    /* background-color: #000; */
+    border-radius: 40px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    top:10vh;
+    left:10%;
+}
+.profile-pic>img{
+    height: 90%;
+    width: 95%;
+    margin-bottom: 2vw;
 }
